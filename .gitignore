@@ -1,0 +1,17 @@
+# Swift Package Manager
+/.build
+/.swiftpm
+/xcuserdata
+DerivedData
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/xcshareddata/
+.swiftpm/xcode/Package.swift
+
+# macOS
+.DS_Store
+
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
