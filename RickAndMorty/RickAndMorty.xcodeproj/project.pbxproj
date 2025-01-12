@@ -27,7 +27,8 @@
 		27F44C042D3469E400D7C2C9 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F44C1A2D3469E500D7C2C9 /* RickAndMortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F44C242D3469E500D7C2C9 /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F44C392D346A1600D7C2C9 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
+		27F44C7B2D346DD400D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
+		27F44CAC2D346EA600D7C2C9 /* NetworkManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkManager; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -89,7 +90,7 @@
 		27F44BFB2D3469E400D7C2C9 = {
 			isa = PBXGroup;
 			children = (
-				27F44C382D3469FA00D7C2C9 /* Packages */,
+				27F44CAD2D346EA600D7C2C9 /* Packages */,
 				27F44C062D3469E400D7C2C9 /* RickAndMorty */,
 				27F44C1D2D3469E500D7C2C9 /* RickAndMortyTests */,
 				27F44C272D3469E500D7C2C9 /* RickAndMortyUITests */,
@@ -107,10 +108,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27F44C382D3469FA00D7C2C9 /* Packages */ = {
+		27F44C7C2D346DD400D7C2C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27F44C392D346A1600D7C2C9 /* Network */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F44CAD2D346EA600D7C2C9 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				27F44CAC2D346EA600D7C2C9 /* NetworkManager */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -221,6 +229,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27F44C052D3469E400D7C2C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27F44C7C2D346DD400D7C2C9 /* Products */;
+					ProjectRef = 27F44C7B2D346DD400D7C2C9 /* RickAndMorty.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				27F44C032D3469E400D7C2C9 /* RickAndMorty */,
