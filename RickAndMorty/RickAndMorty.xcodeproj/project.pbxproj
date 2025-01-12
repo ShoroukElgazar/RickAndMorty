@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		27F44DA22D34770200D7C2C9 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 27F44DA12D34770200D7C2C9 /* DependencyContainer */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		27F44C1B2D3469E500D7C2C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,6 +33,9 @@
 		27F44C242D3469E500D7C2C9 /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F44C7B2D346DD400D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
 		27F44CAC2D346EA600D7C2C9 /* NetworkManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkManager; sourceTree = "<group>"; };
+		27F44D5F2D34736600D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
+		27F44DB82D34776D00D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
+		27F44DEF2D3478BD00D7C2C9 /* DependencyContainer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DependencyContainer; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -67,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F44DA22D34770200D7C2C9 /* DependencyContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +126,24 @@
 		27F44CAD2D346EA600D7C2C9 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				27F44DEF2D3478BD00D7C2C9 /* DependencyContainer */,
 				27F44CAC2D346EA600D7C2C9 /* NetworkManager */,
 			);
 			path = Packages;
+			sourceTree = "<group>";
+		};
+		27F44D622D34736600D7C2C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F44DBB2D34776D00D7C2C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +166,7 @@
 			);
 			name = RickAndMorty;
 			packageProductDependencies = (
+				27F44DA12D34770200D7C2C9 /* DependencyContainer */,
 			);
 			productName = RickAndMorty;
 			productReference = 27F44C042D3469E400D7C2C9 /* RickAndMorty.app */;
@@ -226,10 +250,20 @@
 			);
 			mainGroup = 27F44BFB2D3469E400D7C2C9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27F44C052D3469E400D7C2C9 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 27F44DBB2D34776D00D7C2C9 /* Products */;
+					ProjectRef = 27F44DB82D34776D00D7C2C9 /* RickAndMorty.xcodeproj */;
+				},
+				{
+					ProductGroup = 27F44D622D34736600D7C2C9 /* Products */;
+					ProjectRef = 27F44D5F2D34736600D7C2C9 /* RickAndMorty.xcodeproj */;
+				},
 				{
 					ProductGroup = 27F44C7C2D346DD400D7C2C9 /* Products */;
 					ProjectRef = 27F44C7B2D346DD400D7C2C9 /* RickAndMorty.xcodeproj */;
@@ -328,9 +362,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RickAndMorty.RickAndMorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,9 +394,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RickAndMorty.RickAndMorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -593,6 +635,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27F44DA12D34770200D7C2C9 /* DependencyContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyContainer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27F44BFC2D3469E400D7C2C9 /* Project object */;
 }
