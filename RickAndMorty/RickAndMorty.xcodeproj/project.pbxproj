@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27F44DA22D34770200D7C2C9 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 27F44DA12D34770200D7C2C9 /* DependencyContainer */; };
+		273A51022D3492ED004F6FEB /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 273A51012D3492ED004F6FEB /* NetworkManager */; };
+		273A510B2D34C335004F6FEB /* CharactersDetails in Frameworks */ = {isa = PBXBuildFile; productRef = 273A510A2D34C335004F6FEB /* CharactersDetails */; };
+		273A510D2D34C350004F6FEB /* CharacterDetailsInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 273A510C2D34C350004F6FEB /* CharacterDetailsInterface */; };
+		27B23A562D354B7300F4B222 /* CommonModels in Frameworks */ = {isa = PBXBuildFile; productRef = 27B23A552D354B7300F4B222 /* CommonModels */; };
+		27B23A582D354B7800F4B222 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 27B23A572D354B7800F4B222 /* Utilities */; };
+		27B23A7C2D35588A00F4B222 /* CommonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27B23A7B2D35588A00F4B222 /* CommonUI */; };
+		27B23B6B2D35F40C00F4B222 /* SharedError in Frameworks */ = {isa = PBXBuildFile; productRef = 27B23B6A2D35F40C00F4B222 /* SharedError */; };
 		27F44E7B2D347B9A00D7C2C9 /* Characters in Frameworks */ = {isa = PBXBuildFile; productRef = 27F44E7A2D347B9A00D7C2C9 /* Characters */; };
-		27F44E862D347B9E00D7C2C9 /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 27F44E852D347B9E00D7C2C9 /* NetworkManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		273A4FF12D34804F004F6FEB /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
+		273A50262D3480CA004F6FEB /* Characters */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Characters; sourceTree = "<group>"; };
+		273A50812D348966004F6FEB /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
+		273A51352D3542E6004F6FEB /* DependencyContainer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DependencyContainer; sourceTree = "<group>"; };
+		27B23A302D3544CF00F4B222 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
+		27B23A312D3546FB00F4B222 /* CommonModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonModels; sourceTree = "<group>"; };
+		27B23A322D35472C00F4B222 /* CharactersDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CharactersDetails; sourceTree = "<group>"; };
+		27B23A332D35473D00F4B222 /* CharacterDetailsInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CharacterDetailsInterface; sourceTree = "<group>"; };
+		27B23A7A2D35587600F4B222 /* CommonUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonUI; sourceTree = "<group>"; };
+		27B23B482D35F38E00F4B222 /* SharedError */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedError; sourceTree = "<group>"; };
 		27F44C042D3469E400D7C2C9 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F44C1A2D3469E500D7C2C9 /* RickAndMortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F44C242D3469E500D7C2C9 /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,9 +52,7 @@
 		27F44CAC2D346EA600D7C2C9 /* NetworkManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkManager; sourceTree = "<group>"; };
 		27F44D5F2D34736600D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
 		27F44DB82D34776D00D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
-		27F44DEF2D3478BD00D7C2C9 /* DependencyContainer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DependencyContainer; sourceTree = SOURCE_ROOT; };
 		27F44E042D3478D000D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
-		27F44E2F2D3479A800D7C2C9 /* Characters */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Characters; sourceTree = SOURCE_ROOT; };
 		27F44E4E2D347B8D00D7C2C9 /* RickAndMorty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RickAndMorty.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +78,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F44E7B2D347B9A00D7C2C9 /* Characters in Frameworks */,
-				27F44DA22D34770200D7C2C9 /* DependencyContainer in Frameworks */,
-				27F44E862D347B9E00D7C2C9 /* NetworkManager in Frameworks */,
+				27B23A582D354B7800F4B222 /* Utilities in Frameworks */,
+				273A510D2D34C350004F6FEB /* CharacterDetailsInterface in Frameworks */,
+				27B23A7C2D35588A00F4B222 /* CommonUI in Frameworks */,
+				27B23B6B2D35F40C00F4B222 /* SharedError in Frameworks */,
+				273A51022D3492ED004F6FEB /* NetworkManager in Frameworks */,
+				273A510B2D34C335004F6FEB /* CharactersDetails in Frameworks */,
+				27B23A562D354B7300F4B222 /* CommonModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +105,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273A4FF42D34804F004F6FEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		273A501C2D3480A8004F6FEB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				27B23A7E2D35921F00F4B222 /* Characters */,
+				27B23A7D2D3591EC00F4B222 /* CharacterDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		273A50842D348966004F6FEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B23A7D2D3591EC00F4B222 /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				27B23A322D35472C00F4B222 /* CharactersDetails */,
+				27B23A332D35473D00F4B222 /* CharacterDetailsInterface */,
+			);
+			path = CharacterDetails;
+			sourceTree = "<group>";
+		};
+		27B23A7E2D35921F00F4B222 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				273A50262D3480CA004F6FEB /* Characters */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
 		27F44BFB2D3469E400D7C2C9 = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +177,13 @@
 		27F44CAD2D346EA600D7C2C9 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				27F44E2F2D3479A800D7C2C9 /* Characters */,
-				27F44DEF2D3478BD00D7C2C9 /* DependencyContainer */,
+				27B23B482D35F38E00F4B222 /* SharedError */,
+				27B23A7A2D35587600F4B222 /* CommonUI */,
+				27B23A312D3546FB00F4B222 /* CommonModels */,
+				27B23A302D3544CF00F4B222 /* Utilities */,
+				273A51352D3542E6004F6FEB /* DependencyContainer */,
 				27F44CAC2D346EA600D7C2C9 /* NetworkManager */,
+				273A501C2D3480A8004F6FEB /* Modules */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -181,9 +243,14 @@
 			);
 			name = RickAndMorty;
 			packageProductDependencies = (
-				27F44DA12D34770200D7C2C9 /* DependencyContainer */,
 				27F44E7A2D347B9A00D7C2C9 /* Characters */,
-				27F44E852D347B9E00D7C2C9 /* NetworkManager */,
+				273A51012D3492ED004F6FEB /* NetworkManager */,
+				273A510A2D34C335004F6FEB /* CharactersDetails */,
+				273A510C2D34C350004F6FEB /* CharacterDetailsInterface */,
+				27B23A552D354B7300F4B222 /* CommonModels */,
+				27B23A572D354B7800F4B222 /* Utilities */,
+				27B23A7B2D35588A00F4B222 /* CommonUI */,
+				27B23B6A2D35F40C00F4B222 /* SharedError */,
 			);
 			productName = RickAndMorty;
 			productReference = 27F44C042D3469E400D7C2C9 /* RickAndMorty.app */;
@@ -282,6 +349,10 @@
 					ProjectRef = 27F44D5F2D34736600D7C2C9 /* RickAndMorty.xcodeproj */;
 				},
 				{
+					ProductGroup = 273A4FF42D34804F004F6FEB /* Products */;
+					ProjectRef = 273A4FF12D34804F004F6FEB /* RickAndMorty.xcodeproj */;
+				},
+				{
 					ProductGroup = 27F44C7C2D346DD400D7C2C9 /* Products */;
 					ProjectRef = 27F44C7B2D346DD400D7C2C9 /* RickAndMorty.xcodeproj */;
 				},
@@ -292,6 +363,10 @@
 				{
 					ProductGroup = 27F44E512D347B8D00D7C2C9 /* Products */;
 					ProjectRef = 27F44E4E2D347B8D00D7C2C9 /* RickAndMorty.xcodeproj */;
+				},
+				{
+					ProductGroup = 273A50842D348966004F6FEB /* Products */;
+					ProjectRef = 273A50812D348966004F6FEB /* RickAndMorty.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -377,9 +452,8 @@
 				INFOPLIST_FILE = RickAndMorty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,9 +484,8 @@
 				INFOPLIST_FILE = RickAndMorty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,17 +739,37 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		27F44DA12D34770200D7C2C9 /* DependencyContainer */ = {
+		273A51012D3492ED004F6FEB /* NetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DependencyContainer;
+			productName = NetworkManager;
+		};
+		273A510A2D34C335004F6FEB /* CharactersDetails */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CharactersDetails;
+		};
+		273A510C2D34C350004F6FEB /* CharacterDetailsInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CharacterDetailsInterface;
+		};
+		27B23A552D354B7300F4B222 /* CommonModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommonModels;
+		};
+		27B23A572D354B7800F4B222 /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
+		};
+		27B23A7B2D35588A00F4B222 /* CommonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommonUI;
+		};
+		27B23B6A2D35F40C00F4B222 /* SharedError */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedError;
 		};
 		27F44E7A2D347B9A00D7C2C9 /* Characters */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Characters;
-		};
-		27F44E852D347B9E00D7C2C9 /* NetworkManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NetworkManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
