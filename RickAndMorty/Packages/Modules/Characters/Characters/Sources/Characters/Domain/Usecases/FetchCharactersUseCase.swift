@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import CommonModels
 
 public protocol FetchCharactersUseCaseProtocol {
-    func fetchCharacters() async throws -> [Character]
+    func fetchCharacters(page: Int,parameters: [ParameterModel]) async throws -> CharacterResponse
 }
 
 public class FetchCharactersUseCase: FetchCharactersUseCaseProtocol {
@@ -18,9 +19,8 @@ public class FetchCharactersUseCase: FetchCharactersUseCaseProtocol {
         self.repo = repo
     }
     
-    public func fetchCharacters() async throws -> [Character] {
-        let data = try await repo.fetchCharacters()
-        print(data)
+    public func fetchCharacters(page: Int,parameters: [ParameterModel]) async throws -> CharacterResponse {
+        let data = try await repo.fetchCharacters(page: page,parameters: parameters)
         return data
     }
 }

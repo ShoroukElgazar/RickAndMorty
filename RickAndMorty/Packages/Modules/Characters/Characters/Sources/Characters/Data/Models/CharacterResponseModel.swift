@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CommonModels
 
 // MARK: - CharacterResponseModel
 public struct CharacterResponseModel: Decodable {
@@ -19,6 +20,10 @@ public struct InfoModel: Decodable {
     let pages: Int
     let next: String?
     let prev: String?
+    
+    static func toEntity(_ model: InfoModel) -> Info {
+        return Info(count: model.count, pages: model.pages)
+    }
 }
 
 // MARK: - CharacterModel
@@ -44,7 +49,8 @@ public struct CharacterModel: Decodable {
               species: model.species ?? "",
               type: model.type ?? "",
               gender: model.gender ?? "",
-              image: model.image ?? ""
+              image: model.image ?? "",
+              locationName: model.location?.name ?? ""
           )
       }
 }

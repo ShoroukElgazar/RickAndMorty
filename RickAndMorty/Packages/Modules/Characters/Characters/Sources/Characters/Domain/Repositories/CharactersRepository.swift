@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import CommonModels
 
 public protocol CharactersRepositoryProtocol {
-    func fetchCharacters() async throws -> [Character]
+    func fetchCharacters(page: Int,parameters: [ParameterModel]) async throws -> CharacterResponse
 }
