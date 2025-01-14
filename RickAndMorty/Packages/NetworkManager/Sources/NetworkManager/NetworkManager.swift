@@ -2,6 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
+import SharedError
 
 public class NetworkManager: NetworkProvider {
     private let session: URLSession
@@ -22,7 +23,7 @@ public class NetworkManager: NetworkProvider {
             let (data, response) = try await session.data(for: request)
             
             guard let httpResponse = response as? HTTPURLResponse else {
-                throw NetworkError.invalidResponse
+                throw ResponseError.invalidResponse
             }
             
             switch httpResponse.statusCode {
@@ -31,36 +32,36 @@ public class NetworkManager: NetworkProvider {
                     let decodedData = try JSONDecoder().decode(T.self, from: data)
                     return decodedData
                 } catch {
-                    throw NetworkError.decodingError(error)
+                    throw ResponseError.decodingError(error)
                 }
             case 400:
-                throw NetworkError.invalidResponse
+                throw ResponseError.invalidResponse
             case 401:
-                throw NetworkError.unauthorized
+                throw ResponseError.unauthorized
             case 403:
-                throw NetworkError.forbidden
+                throw ResponseError.forbidden
             case 404:
-                throw NetworkError.notFound
+                throw ResponseError.notFound
             case 408:
-                throw NetworkError.timeout
+                throw ResponseError.timeout
             case 500..<600:
-                throw NetworkError.serverError
+                throw ResponseError.serverError
             default:
-                throw NetworkError.unknown
+                throw ResponseError.unknown
             }
         } catch let error as URLError {
             switch error.code {
             case .notConnectedToInternet, .networkConnectionLost:
-                throw NetworkError.offlineNetwork
+                throw ResponseError.offlineNetwork
             case .timedOut:
-                throw NetworkError.timeout
+                throw ResponseError.timeout
             case .cancelled:
-                throw NetworkError.cancelled
+                throw ResponseError.cancelled
             default:
-                throw NetworkError.networkError(error)
+                throw ResponseError.networkError(error)
             }
         } catch {
-            throw NetworkError.unknown
+            throw ResponseError.unknown
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SharedError
 
 class RequestBuilder {
     private var urlString: String?
@@ -38,7 +39,7 @@ class RequestBuilder {
     
     func build() throws -> URLRequest {
         guard let urlString = urlString else {
-            throw NetworkError.invalidURL
+            throw ResponseError.invalidURL
         }
         
         var urlComponents = URLComponents(string: urlString)
@@ -58,20 +59,23 @@ class RequestBuilder {
             }
         case .urlEncoding:
             if let parameters = parameters {
-                let bodyString = parameters.map { "\($0.key)=\($0.value)" }.joined(separator: "&")
-                body = bodyString.data(using: .utf8)
+                let queryString = parameters.map { "\($0.key)=\($0.value)" }.joined(separator: "&")
+                if let baseURL = urlComponents?.url {
+                    let fullURLString = "\(baseURL.absoluteString)?\(queryString)"
+                    urlComponents = URLComponents(string: fullURLString)
+                }
             }
         }
         
         guard let url = urlComponents?.url else {
-            throw NetworkError.invalidURL
+            throw ResponseError.invalidURL
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.allHTTPHeaderFields = headers
         request.httpBody = body
-        
+        print("endPoint: \(url)")
         return request
     }
 }
