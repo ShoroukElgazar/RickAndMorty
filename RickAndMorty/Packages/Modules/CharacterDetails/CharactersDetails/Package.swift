@@ -6,6 +6,7 @@ private let characterDetailsInterface = "CharacterDetailsInterface"
 private let commonUI = "CommonUI"
 private let utilities = "Utilities"
 private let commonModels = "CommonModels"
+private let dependencyConfigurableInterface = "DependencyConfigurableInterface"
 
 let package = Package(
     name: "CharactersDetails",
@@ -20,7 +21,8 @@ let package = Package(
         .package(name: characterDetailsInterface, path: "../\(characterDetailsInterface)"),
         .package(name: commonUI, path: "../../\(commonUI)"),
         .package(name: utilities, path: "../../\(utilities)"),
-        .package(name: commonModels, path: "../../\(commonModels)")
+        .package(name: commonModels, path: "../../\(commonModels)"),
+        .package(name: dependencyConfigurableInterface, path: "../../\(dependencyConfigurableInterface)")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -31,7 +33,8 @@ let package = Package(
         .product(name: characterDetailsInterface, package: characterDetailsInterface),
         .product(name: commonUI, package: commonUI),
         .product(name: utilities, package: utilities),
-        .product(name: commonModels, package: commonModels)
+        .product(name: commonModels, package: commonModels),
+        .product(name: dependencyConfigurableInterface, package: dependencyConfigurableInterface)
         ]),
         .testTarget(
             name: "CharactersDetailsTests",
